@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNInnopay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNInnopay.m */; };
 		F347CF0A28E7756B009396B9 /* IOSNativeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = F347CF0828E7756A009396B9 /* IOSNativeToast.m */; };
-		F347CF2828E7766A009396B9 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F347CF1928E77663009396B9 /* libReact.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +97,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F347CF2828E7766A009396B9 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

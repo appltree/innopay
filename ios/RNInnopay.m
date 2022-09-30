@@ -1,5 +1,6 @@
 
 #import "RNInnopay.h"
+#import "IOSNativeToast.h"
 
 @interface RNInnopay()
 
