@@ -8,7 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNInnopay.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNInnopay.m */; };
+		F347CF0A28E7756B009396B9 /* IOSNativeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = F347CF0828E7756A009396B9 /* IOSNativeToast.m */; };
+		F347CF2828E7766A009396B9 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F347CF1928E77663009396B9 /* libReact.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F347CF1828E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		F347CF1A28E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		F347CF1C28E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C059A1DE3340900C268FA;
+			remoteInfo = yoga;
+		};
+		F347CF1E28E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3C06751DE3340C00C268FA;
+			remoteInfo = "yoga-tvOS";
+		};
+		F347CF2028E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9251DE5FBEC00167DC4;
+			remoteInfo = cxxreact;
+		};
+		F347CF2228E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9321DE5FBEE00167DC4;
+			remoteInfo = "cxxreact-tvOS";
+		};
+		F347CF2428E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD90B1DE5FBD600167DC4;
+			remoteInfo = jschelpers;
+		};
+		F347CF2628E77663009396B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
+			remoteInfo = "jschelpers-tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -26,6 +87,10 @@
 		134814201AA4EA6300B7C361 /* libRNInnopay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNInnopay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNInnopay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNInnopay.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNInnopay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNInnopay.m; sourceTree = "<group>"; };
+		F347CF0828E7756A009396B9 /* IOSNativeToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSNativeToast.m; sourceTree = "<group>"; };
+		F347CF0928E7756A009396B9 /* IOSNativeToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNativeToast.h; sourceTree = "<group>"; };
+		F347CF0B28E77632009396B9 /* node_modules */ = {isa = PBXFileReference; lastKnownFileType = folder; name = node_modules; path = ../node_modules; sourceTree = "<group>"; };
+		F347CF0D28E77662009396B9 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F347CF2828E7766A009396B9 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +116,37 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				F347CF0928E7756A009396B9 /* IOSNativeToast.h */,
+				F347CF0828E7756A009396B9 /* IOSNativeToast.m */,
 				B3E7B5881CC2AC0600A0062D /* RNInnopay.h */,
 				B3E7B5891CC2AC0600A0062D /* RNInnopay.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				F347CF0728E77516009396B9 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		F347CF0728E77516009396B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F347CF0D28E77662009396B9 /* React.xcodeproj */,
+				F347CF0B28E77632009396B9 /* node_modules */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F347CF0E28E77662009396B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F347CF1928E77663009396B9 /* libReact.a */,
+				F347CF1B28E77663009396B9 /* libReact.a */,
+				F347CF1D28E77663009396B9 /* libyoga.a */,
+				F347CF1F28E77663009396B9 /* libyoga.a */,
+				F347CF2128E77663009396B9 /* libcxxreact.a */,
+				F347CF2328E77663009396B9 /* libcxxreact.a */,
+				F347CF2528E77663009396B9 /* libjschelpers.a */,
+				F347CF2728E77663009396B9 /* libjschelpers.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,11 +188,18 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F347CF0E28E77662009396B9 /* Products */;
+					ProjectRef = F347CF0D28E77662009396B9 /* React.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNInnopay */,
@@ -107,11 +207,71 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F347CF1928E77663009396B9 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = F347CF1828E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF1B28E77663009396B9 /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = F347CF1A28E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF1D28E77663009396B9 /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = F347CF1C28E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF1F28E77663009396B9 /* libyoga.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyoga.a;
+			remoteRef = F347CF1E28E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF2128E77663009396B9 /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = F347CF2028E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF2328E77663009396B9 /* libcxxreact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcxxreact.a;
+			remoteRef = F347CF2228E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF2528E77663009396B9 /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = F347CF2428E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F347CF2728E77663009396B9 /* libjschelpers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjschelpers.a;
+			remoteRef = F347CF2628E77663009396B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F347CF0A28E7756B009396B9 /* IOSNativeToast.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNInnopay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
