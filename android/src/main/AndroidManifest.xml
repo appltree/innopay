@@ -1,6 +1,50 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="io.appltree.innopay">
+    <queries>
+      <package android:name="com.kakao.talk"/>            <!-- 카카오톡 -->
+      <package android:name="com.kbcard.cxh.appcard"/>    <!-- KBPAY -->
+      <package android:name="viva.republica.toss"/>       <!-- 토스 -->
+      <package android:name="kvp.jjy.MispAndroid320"/>    <!-- 페이북 -->
+      <package android:name="com.nhnent.payapp"/>         <!-- 페이코 -->
+      <package android:name="com.kakaopay.app"/>          <!-- 카카오페이 -->
+      <package android:name="com.lottemembers.android"/>  <!-- 롯데멤버스 -->
+      <package android:name="com.lcacApp"/>               <!-- 롯데 앱카드 -->
+      <package android:name="com.samsung.android.spay"/>  <!-- 삼성페이 -->
+      <package android:name="com.ssg.serviceapp.android.egiftcertificate"/> <!-- SSG페이 -->
+      <package android:name="com.naverfin.payapp"/>       <!-- 네이버페이 -->
+      <package android:name="com.TouchEn.mVaccine.webs"/>       <!-- 네이버페이 -->
+      <package android:name="com.wooricard.smartapp"/>    <!-- 우리WON카드 -->
+      <package android:name="com.hyundaicard.appcard"/>   <!-- 현대 앱카드 -->
+      <package android:name="com.shcard.smartpay"/>       <!-- 신한 앱카드 -->
+      <package android:name="nh.smart.nhallonepay"/>      <!-- 농협 올원페이 -->
+      <package android:name="com.hanabank.ebk.channel.android.hananbank"/><!-- (구)하나원큐 -->
+      <package android:name="kr.co.citibank.citimobile"/> <!-- 씨티스마트 -->
+      <package android:name="kr.co.samsungcard.mpocket"/> <!-- 삼성 앱카드 -->
+      <package android:name="com.kbstar.reboot"/>         <!-- 우리 WON 뱅크 -->
+      <package android:name="com.wooribank.smart.npib"/>  <!-- 씨티스마트 -->
+      <package android:name="com.hanaskcard.paycla"/>          <!-- 1QPay -->
+      <package android:name="com.hanaskcard.rocomo.potal"/>    <!-- 모아사인 -->
+      <package android:name="com.ahnlab.v3mobileplus"/>        <!-- AhnLab V3 Mobile Plus -->
+      <package android:name="com.lge.lgpay"/>                  <!-- LG페이 -->
 
+      <!-- 계좌이체 -->
+      <package android:name="com.kftc.bankpay.android"/>  <!-- 뱅크페이 -->
+      <package android:name="com.kbstar.liivbank"/> <!-- 국민 뉴리브 -->
+      <package android:name="com.nh.cashcardapp"/> <!-- NH 앱캐시 -->
+      <package android:name="kr.co.kfcc.mobilebank"/> <!-- MG상상뱅크 -->
+      <package android:name="com.knb.psb"/> <!-- MG상상뱅크 -->
+    </queries>
+
+    <application>
+      <activity android:name=".WebResultPayActivity"
+            android:screenOrientation="portrait"
+            android:alwaysRetainTaskState="true"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+        </intent-filter>
+      </activity>
+    </application>
 </manifest>
   

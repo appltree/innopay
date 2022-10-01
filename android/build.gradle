@@ -2,22 +2,29 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
+        classpath 'com.android.tools.build:gradle:4.2.2'
     }
 }
 
 apply plugin: 'com.android.library'
 
+def DEFAULT_COMPILE_SDK_VERSION = 26
+def DEFAULT_BUILD_TOOLS_VERSION = "26.0.2"
+def DEFAULT_MIN_SDK_VERSION = 16
+def DEFAULT_TARGET_SDK_VERSION = 26
+def DEFAULT_SUPPORT_LIB_VERSION = "26.1.0"
+
 android {
-    compileSdkVersion 23
-    buildToolsVersion "25.0.0"
+    compileSdkVersion rootProject.ext.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : DEFAULT_COMPILE_SDK_VERSION
+    buildToolsVersion rootProject.ext.hasProperty('buildToolsVersion') ? rootProject.ext.buildToolsVersion : DEFAULT_BUILD_TOOLS_VERSION
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion rootProject.ext.hasProperty('minSdkVersion') ? rootProject.ext.minSdkVersion : DEFAULT_MIN_SDK_VERSION
+        targetSdkVersion rootProject.ext.hasProperty('targetSdkVersion') ? rootProject.ext.targetSdkVersion : DEFAULT_TARGET_SDK_VERSION
         versionCode 1
         versionName "1.0"
     }
@@ -31,6 +38,8 @@ repositories {
 }
 
 dependencies {
+    def supportLibVersion = rootProject.hasProperty('supportLibVersion') ? rootProject.supportLibVersion : DEFAULT_SUPPORT_LIB_VERSION
     implementation 'com.facebook.react:react-native:+'
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
 }
   
