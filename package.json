@@ -1,7 +1,7 @@
 {
   "name": "react-native-innopay",
-  "version": "0.9.0",
-  "description": "",
+  "version": "0.9.1",
+  "description": "innopay module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,15 @@
     "react-native",
     "innopay"
   ],
-  "author": "",
-  "license": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appltree/react-native-innopay"
+  },
+  "author": "appltree",
+  "license": "MIT",
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
