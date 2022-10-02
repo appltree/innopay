@@ -27,7 +27,6 @@ public class RNInnopayModule extends ReactContextBaseJavaModule implements Activ
   public RNInnopayModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
-    reactContext.addActivityEventListener(this); 
   }
 
   @Override
@@ -44,10 +43,13 @@ public class RNInnopayModule extends ReactContextBaseJavaModule implements Activ
   @ReactMethod
   public void pay(ReadableMap params, final Callback cb) {
 
+    reactContext.addActivityEventListener(this); 
+
     callback = cb;
     Activity currentActivity = getCurrentActivity();
 
     if (currentActivity == null) {      
+      reactContext.removeActivityEventListener(this);
       callback.invoke("Activity doesn't exist", null);
       return;
     }
@@ -154,6 +156,8 @@ public class RNInnopayModule extends ReactContextBaseJavaModule implements Activ
 
         if (!payResultCode.equals("3001") && !payResultCode.equals("4000") && !payResultCode.equals("4100")) {
             String errorMsg = data.getStringExtra(ConstWebResult.RESULT_ERROR_MSG);
+            
+            reactContext.removeActivityEventListener(this);
             callback.invoke(errorMsg, null);
         } else {
             String message = data.getStringExtra(ConstWebResult.RESULT_RESULT_MSG);
@@ -161,11 +165,14 @@ public class RNInnopayModule extends ReactContextBaseJavaModule implements Activ
             response.putString("Tid", data.getStringExtra(ConstWebResult.RESULT_TID));
             response.putString("Moid", data.getStringExtra(ConstWebResult.RESULT_MOID));
             response.putString("message", message);
+            
+            reactContext.removeActivityEventListener(this);
             callback.invoke(null, response);
         }
       }
       // 결제 결과를 받지 못할 경우
       else {
+        reactContext.removeActivityEventListener(this);
         callback.invoke("결과 알수 없음 (취소 또는 오류 발생)", null);
       }
     }
