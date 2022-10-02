@@ -1,7 +1,4 @@
 .git
-.idea/
-gen/
 node_modules/
 InnopayExample/
 
-index.ts

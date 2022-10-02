@@ -1,17 +1,19 @@
 {
   "name": "react-native-innopay",
-  "version": "0.8.5",
+  "version": "0.9.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "innopay"
   ],
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react": "*",
+    "react-native": "*"
   }
 }

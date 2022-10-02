@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "random": "cpp",
+    "algorithm": "cpp",
+    "array": "cpp",
+    "span": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "vector": "cpp",
+    "iterator": "cpp",
+    "*.ipp": "cpp"
+  }
+}

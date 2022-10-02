@@ -5,7 +5,8 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNInnopay : NSObject <RCTBridgeModule>
+#import "PGViewController.h"
+
+@interface RNInnopay : NSObject <RCTBridgeModule, sendBackDelegate>
 
 @end
-  
